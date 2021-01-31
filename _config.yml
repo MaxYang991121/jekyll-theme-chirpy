@@ -27,7 +27,7 @@ social:
   email: maxyang1121@icloud.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/MaxYang991121       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -141,10 +141,10 @@ defaults:
     values:
       breadcrumb:
         -
-          label: 主页
+          label: Home
           url: /
         -
-          label: 标签
+          label: Tags
           url: /tabs/tags/
   -
     scope:
@@ -152,10 +152,10 @@ defaults:
     values:
       breadcrumb:
         -
-          label: 主页
+          label: Home
           url: /
         -
-          label: 分类
+          label: Categories
           url: /tabs/categories/
   -
     scope:
