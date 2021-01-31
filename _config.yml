@@ -2,9 +2,9 @@
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Chirpy                          # the main title
+title: Max.Yang                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: 没有规矩，也成方圆   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -12,23 +12,23 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://MaxYang991121.github.io'
 
-author: your_full_name                  # change to your full name
+author: MaxYang                  # change to your full name
 
 github:
-  username: github_username             # change to your github username
+  username: Maxine991121             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: MaxYang                  # it will shows as the copyright owner in Footer
+  email: maxyang1121@icloud.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    #- https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/MaxYang991121       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -82,7 +82,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/MaxYang991121/MaxYang991121.github.io/assets/img/favicons/FDDA6357-5642-4673-B069-40B566A48603.jpeg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -141,10 +141,10 @@ defaults:
     values:
       breadcrumb:
         -
-          label: Home
+          label: 主页
           url: /
         -
-          label: Tags
+          label: 标签
           url: /tabs/tags/
   -
     scope:
@@ -152,10 +152,10 @@ defaults:
     values:
       breadcrumb:
         -
-          label: Home
+          label: 主页
           url: /
         -
-          label: Categories
+          label: 分类
           url: /tabs/categories/
   -
     scope:
