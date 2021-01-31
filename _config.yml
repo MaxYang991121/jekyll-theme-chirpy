@@ -137,14 +137,14 @@ defaults:
           label: Posts
   -
     scope:
-      path: 标签
+      path: tags
     values:
       breadcrumb:
         -
-          label: 主页
+          label: Home
           url: /
         -
-          label: 标签
+          label: Tags
           url: /tabs/tags/
   -
     scope:
