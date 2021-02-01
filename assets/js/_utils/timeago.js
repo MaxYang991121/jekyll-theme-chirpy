@@ -16,7 +16,7 @@ $(function() {
 
     if (past.getFullYear() !== now.getFullYear()) {
       toRefresh -= 1;
-      return past.toLocaleString("en-US", {
+      return past.toLocaleString("zh-CN", {
         year: "numeric",
         month: "short",
         day: "numeric"
@@ -25,7 +25,7 @@ $(function() {
 
     if (past.getMonth() !== now.getMonth()) {
       toRefresh -= 1;
-      return past.toLocaleString("en-US", {
+      return past.toLocaleString("zh-CN", {
         month: "short",
         day: "numeric"
       });
