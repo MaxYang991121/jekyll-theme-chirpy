@@ -123,7 +123,7 @@ var body: some View {
 
 ## @State 内部
 
-问题出在 `@State` 上：SwiftUI [通过 property wrapper](/2019/06/swift-ui-firstlook-2/#教程-3---handling-user-input) 简化并模拟了普通的变量读写，但是我们必须始终牢记，`@State Int` 并不等同于 `Int`，它根本就不是一个传统意义的存储属性。这个 property wrapper 做的事情大体上说有三件：
+`@State Int` 并不等同于 `Int`，它根本就不是一个传统意义的存储属性。这个 property wrapper 做的事情大体上说有三件：
 
 1. 为底层的存储变量 `State<Int>` 这个 struct 提供了一组 getter 和 setter，这个 `State` struct 中保存了 `Int` 的具体数字。
 2. 在 body 首次求值前，将 `State<Int>` 关联到当前 `View` 上，为它在堆中对应当前 `View` 分配一个存储位置。
@@ -308,7 +308,6 @@ struct DetailView5: View {
 }
 ```
 
-在[之前的一篇文章](/2020/06/stateobject/) 中，我们已经详细探讨了这方面的内容。如果有兴趣的话，不妨花时间读读看。
 
 ## 状态重设
 
