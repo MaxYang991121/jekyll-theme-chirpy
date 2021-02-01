@@ -36,20 +36,20 @@ $(function() {
     let day = Math.floor(seconds / 86400);
     if (day >= 1) {
       toRefresh -= 1;
-      return day + " day" + (day > 1 ? "s" : "") + " ago";
+      return day + " 天" + (day > 1 ? "s" : "") + " 前";
     }
 
     let hour = Math.floor(seconds / 3600);
     if (hour >= 1) {
-      return hour + " hour" + (hour > 1 ? "s" : "") + " ago";
+      return hour + " 小时" + (hour > 1 ? "s" : "") + " 前";
     }
 
     let minute = Math.floor(seconds / 60);
     if (minute >= 1) {
-      return minute + " minute" + (minute > 1 ? "s" : "") + " ago";
+      return minute + " 分钟" + (minute > 1 ? "s" : "") + " 前";
     }
 
-    return (isLastmod ? "just" : "Just") + " now";
+    return (isLastmod ? "刚刚" : "刚刚") + " 发布";
   }
 
   function updateTimeago() {
