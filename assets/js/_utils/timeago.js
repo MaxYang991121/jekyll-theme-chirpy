@@ -1,14 +1,16 @@
 /*
- * Calculate the Timeago
+ * Caculate the Timeago
+ * v2.0
+ * https://github.com/cotes2020/jekyll-theme-chirpy
+ * © 2019 Cotes Chung
+ * MIT Licensed
  */
 
 $(function() {
 
-  const timeagoElem = $(".timeago");
+  var toRefresh = $(".timeago").length;
 
-  let toRefresh = timeagoElem.length;
-
-  let intervalId = void 0;
+  var intervalId = void 0;
 
   function timeago(iso, isLastmod) {
     let now = new Date();
@@ -36,29 +38,29 @@ $(function() {
     let day = Math.floor(seconds / 86400);
     if (day >= 1) {
       toRefresh -= 1;
-      return day + " day" + (day > 1 ? "s" : "") + " ago";
+      return day + " 天前";
     }
 
     let hour = Math.floor(seconds / 3600);
     if (hour >= 1) {
-      return hour + " hour" + (hour > 1 ? "s" : "") + " ago";
+      return hour + " 小时前";
     }
 
     let minute = Math.floor(seconds / 60);
     if (minute >= 1) {
-      return minute + " minute" + (minute > 1 ? "s" : "") + " ago";
+      return minute + " 分钟前";
     }
 
-    return (isLastmod ? "just" : "Just") + " now";
+    return "刚刚发布";
   }
 
   function updateTimeago() {
     $(".timeago").each(function() {
       if ($(this).children("i").length > 0) {
-        $(this).text();
-        let isLastmod = $(this).hasClass("lastmod");
-        let node = $(this).children("i");
-        let date = node.text(); /* ISO Date: "YYYY-MM-DDTHH:MM:SSZ" */
+        var basic = $(this).text();
+        var isLastmod = $(this).hasClass("lastmod");
+        var node = $(this).children("i");
+        var date = node.text(); /* ISO Date: "YYYY-MM-DDTHH:MM:SSZ" */
         $(this).text(timeago(date, isLastmod));
         $(this).append(node);
       }
