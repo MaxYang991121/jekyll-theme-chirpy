@@ -6,7 +6,7 @@ panel:
   toc: 目录
 
 post:
-  relate_posts: Further Reading
+  relate_posts: 接下来阅读
   share: 分享
   button:
     next: 较新文章
