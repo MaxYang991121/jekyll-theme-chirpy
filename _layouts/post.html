@@ -14,11 +14,12 @@ layout: default
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
         <div>
-          {% include timeago.html date=page.date tooltip=true %}
-          by
+          由
           <span class="author">
             {{ page.author | default: site.author }}
           </span>
+          发布于
+            {% include timeago.html date=page.date tooltip=true %}
         </div>
 
         <div>
