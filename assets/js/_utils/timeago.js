@@ -52,17 +52,7 @@ $(function() {
     return (isLastmod ? "just" : "Just") + " now";
   }
 
-  function updateTimeago() {
-    $(".timeago").each(function() {
-      if ($(this).children("i").length > 0) {
-        var basic = $(this).text();
-        var isLastmod = $(this).hasClass("lastmod");
-        var node = $(this).children("i");
-        var date = node.text(); /* ISO Date: "YYYY-MM-DDTHH:MM:SSZ" */
-        $(this).text(timeago(date, isLastmod));
-        $(this).append(node);
-      }
-    });
+ 
 
     if (toRefresh === 0 && typeof intervalId !== "undefined") {
       clearInterval(intervalId); /* stop interval */
