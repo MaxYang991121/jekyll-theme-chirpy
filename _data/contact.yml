@@ -3,6 +3,10 @@
 -
   type: github
   icon: 'fab fa-github-alt'
+-
+  type: steam
+  icon: 'fab fa-steam'
+  url: 'http://steamcommunity.com/id/SuperMaxHere/'
 #-
 #  type: twitter
 #  icon: 'fab fa-twitter'
