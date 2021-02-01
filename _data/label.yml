@@ -9,8 +9,8 @@ post:
   relate_posts: Further Reading
   share: 分享
   button:
-    next: Newer
-    previous: Older
+    next: 较新文章
+    previous: 较早文章
 
 search_hint: 搜索   # text show on search bar
 
