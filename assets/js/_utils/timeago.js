@@ -55,10 +55,10 @@ $(function() {
   function updateTimeago() {
     $(".timeago").each(function() {
       if ($(this).children("i").length > 0) {
-        $(this).text();
-        let isLastmod = $(this).hasClass("lastmod");
-        let node = $(this).children("i");
-        let date = node.text(); /* ISO Date: "YYYY-MM-DDTHH:MM:SSZ" */
+        var basic = $(this).text();
+        var isLastmod = $(this).hasClass("lastmod");
+        var node = $(this).children("i");
+        var date = node.text(); /* ISO Date: "YYYY-MM-DDTHH:MM:SSZ" */
         $(this).text(timeago(date, isLastmod));
         $(this).append(node);
       }
