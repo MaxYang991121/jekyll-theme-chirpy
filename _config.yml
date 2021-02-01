@@ -6,6 +6,8 @@ title: Max.Yang                          # the main title
 
 tagline: 静守时光,以待流年   # it will display as the sub-title
 
+date_format: "%Y-%m-%d"
+
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
   bootstrap Jekyll theme with responsive web design
