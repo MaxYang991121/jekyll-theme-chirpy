@@ -3,5 +3,5 @@
 tooltip: "%a, %b %e, %Y, %l:%M %p %z"
 
 post:
-  long: "%M %e, %Y"
-  short: "%M %e"
+  long: "%b %e, %Y"
+  short: "%b %e"
